@@ -1,0 +1,61 @@
+{
+    "schema-version": {
+        "type": "generic",
+        "default": 0,
+        "value": 0
+    },
+    "panel-settings": {
+        "type": "generic",
+        "default": {
+            "monitor0_bottom": {
+                "enabled": true,
+                "transparency": 85,
+                "heightOffset": -8,
+                "autoHide": false,
+                "hoverPixels": 8,
+                "noWindowShift": true,
+                "animationTime": 500,
+                "showOnNoFocus": false,
+                "zoomFactor": 1.3,
+                "zoomEnabled": true,
+                "indicatorColor": "rgba(30, 30, 30, 1.0)",
+                "showIndicator": true,
+                "hideDelay": 2000,
+                "minWidth": 50,
+                "hideOnFullscreen": true
+            },
+            "welcomeShown": true
+        },
+        "value": {
+            "monitor0_bottom": {
+                "enabled": true,
+                "transparency": 85,
+                "heightOffset": -8,
+                "autoHide": false,
+                "hoverPixels": 8,
+                "noWindowShift": true,
+                "animationTime": 500,
+                "showOnNoFocus": false,
+                "zoomFactor": 1.3,
+                "zoomEnabled": true,
+                "indicatorColor": "rgba(30, 30, 30, 1.0)",
+                "showIndicator": true,
+                "hideDelay": 2000,
+                "minWidth": 50,
+                "hideOnFullscreen": true
+            },
+            "welcomeShown": true
+        }
+    },
+    "panel-mode-old": {
+        "type": "generic",
+        "default": "",
+        "value": ""
+    },
+    "enabled-panels-old": {
+        "type": "generic",
+        "default": "",
+        "value": ""
+    },
+    "__md5__": "2e2fdbe92fbfab6ac6227cab7604ef2c"
+}

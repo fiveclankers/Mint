@@ -1,0 +1,8 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = Pro-Bro69
+	email = 117039437+Pro-Bro69@users.noreply.github.com

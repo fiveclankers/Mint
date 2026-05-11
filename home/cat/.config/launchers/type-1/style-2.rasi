@@ -1,0 +1,192 @@
+/**
+ *
+ * Clean translucent Rofi for Mint/X11
+ * based on your original layout
+ *
+ **/
+
+configuration {
+    modi:                       "drun,run,filebrowser";
+    show-icons:                 false;
+
+    display-drun:               "Apps";
+    display-run:                "Cmd";
+    display-filebrowser:        "Files";
+
+    drun-display-format:        "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+
+    kb-mode-next:               "Control+Tab,Alt+Right";
+    kb-mode-previous:           "Control+Shift+Tab,Alt+Left";
+}
+
+/*****----- Global -----*****/
+* {
+    font:                       "JetBrainsMono Nerd Font 11";
+
+    background-colour:          rgba(20, 22, 28, 0.72);
+    background-colour-alt:      rgba(255, 255, 255, 0.06);
+    foreground-colour:          rgba(235, 239, 244, 1.00);
+    muted-foreground:           rgba(235, 239, 244, 0.72);
+    selected-colour:            rgba(255, 255, 255, 0.16);
+    selected-border:            rgba(255, 255, 255, 0.10);
+    urgent-colour:              rgba(191, 97, 106, 0.85);
+    active-colour:              rgba(163, 190, 140, 0.85);
+
+    border-colour:              rgba(255, 255, 255, 0.08);
+    handle-colour:              rgba(255, 255, 255, 0.20);
+}
+
+/*****----- Window -----*****/
+window {
+    transparency:               "real";
+    location:                   center;
+    anchor:                     center;
+    fullscreen:                 false;
+    width:                      460px;
+
+    x-offset:                   0px;
+    y-offset:                   0px;
+
+    margin:                     0px;
+    padding:                    0px;
+    border:                     1px solid;
+    border-radius:              14px;
+    border-color:               @border-colour;
+    cursor:                     "default";
+    background-color:           @background-colour;
+}
+
+/*****----- Mainbox -----*****/
+mainbox {
+    enabled:                    true;
+    spacing:                    14px;
+    margin:                     0px;
+    padding:                    26px;
+    border:                     0px;
+    border-radius:              0px;
+    border-color:               @border-colour;
+    background-color:           transparent;
+    children:                   [ "inputbar", "message", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                    true;
+    spacing:                    10px;
+    margin:                     0px;
+    padding:                    12px 14px;
+    border:                     1px solid;
+    border-radius:              12px;
+    border-color:               @border-colour;
+    background-color:           @background-colour-alt;
+    text-color:                 @foreground-colour;
+    children:                   [ "prompt", "entry" ];
+}
+
+prompt {
+    enabled:                    true;
+    padding:                    0px 2px 0px 0px;
+    background-color:           transparent;
+    text-color:                 @muted-foreground;
+}
+textbox-prompt-colon {
+    enabled:                    true;
+    expand:                     false;
+    str:                        "::";
+    background-color:           transparent;
+    text-color:                 @muted-foreground;
+}
+entry {
+    enabled:                    true;
+    background-color:           transparent;
+    text-color:                 @foreground-colour;
+    cursor:                     text;
+    placeholder:                "Search apps, commands, or files...";
+    placeholder-color:          @muted-foreground;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                    true;
+    columns:                    1;
+    lines:                      10;
+    cycle:                      true;
+    dynamic:                    true;
+    scrollbar:                  true;
+    layout:                     vertical;
+    reverse:                    false;
+    fixed-height:               true;
+    fixed-columns:              true;
+
+    spacing:                    8px;
+    margin:                     0px;
+    padding:                    0px;
+    border:                     0px;
+    border-radius:              0px;
+    background-color:           transparent;
+    text-color:                 @foreground-colour;
+    cursor:                     "default";
+}
+
+scrollbar {
+    handle-width:               6px;
+    handle-color:               @handle-colour;
+    border-radius:              999px;
+    background-color:           rgba(255, 255, 255, 0.05);
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                    true;
+    spacing:                    10px;
+    margin:                     0px;
+    padding:                    10px 12px;
+    border:                     1px solid;
+    border-radius:              10px;
+    border-color:               transparent;
+    background-color:           rgba(255, 255, 255, 0.03);
+    text-color:                 @foreground-colour;
+    cursor:                     pointer;
+}
+element normal.normal {
+    background-color:           rgba(255, 255, 255, 0.03);
+    text-color:                 @foreground-colour;
+}
+element selected.normal {
+    background-color:           @selected-colour;
+    text-color:                 @foreground-colour;
+    border-color:               @selected-border;
+}
+element normal.urgent {
+    background-color:           @urgent-colour;
+    text-color:                 rgba(255,255,255,1.0);
+}
+element normal.active {
+    background-color:           @active-colour;
+    text-color:                 rgba(20,22,28,1.0);
+}
+
+element-icon {
+    background-color:           transparent;
+    text-color:                 inherit;
+    size:                       20px;
+    cursor:                     inherit;
+}
+element-text {
+    background-color:           transparent;
+    text-color:                 inherit;
+    highlight:                  inherit;
+    cursor:                     inherit;
+    vertical-align:             0.5;
+    horizontal-align:           0.0;
+}
+
+/*****----- Message -----*****/
+message {
+    enabled:                    false;
+}
+
+/*****----- Hide mode tabs -----*****/
+mode-switcher {
+    enabled:                    false;
+}

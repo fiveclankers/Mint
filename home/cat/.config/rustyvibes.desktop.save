@@ -1,0 +1,8 @@
+sktop Entry]
+Type=Application
+Version=1.0
+Name=Rustyvibes
+Exec=~/.cargo/bin/rustyvibes ~/Documents/Soundpacks/Soundpacks/cherrymx-red-abs/
+Terminal=false
+X-GNOME-Autostart-enabled=true
+EOF

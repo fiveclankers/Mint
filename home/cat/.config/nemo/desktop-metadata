@@ -1,0 +1,62 @@
+[desktop-monitor-0]
+nemo-icon-view-keep-aligned=true
+nemo-icon-view-auto-layout=true
+nemo-icon-view-layout-timestamp=1778466612
+desktop-grid-adjust=53;100;
+nemo-icon-view-zoom-level=3
+desktop-horizontal=false
+nemo-icon-view-sort-reversed=false
+
+[Ventoy.volume]
+nemo-icon-position-timestamp=1778462344
+nemo-icon-position=28,107
+monitor=0
+icon-scale=1
+
+[193 GB Volume.volume]
+nemo-icon-position=61,207
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1778202341
+
+[New Volume.volume]
+nemo-icon-position=28,207
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1778483766
+
+[New Volume 1.volume]
+nemo-icon-position=61,307
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1778202341
+
+[Windows ISO.volume]
+nemo-icon-position=61,438
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1777825393
+
+[home]
+nemo-icon-position=28,7
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1778483766
+
+[VTOYEFI.volume]
+nemo-icon-position=28,207
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1778462344
+
+[79 GB Volume.volume]
+nemo-icon-position=61,107
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1778202341
+
+[85 GB Volume.volume]
+nemo-icon-position=28,107
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1778483766
